@@ -78,18 +78,7 @@ Version:	1.1
 	padding: 10px 15px;
 	font-size: 13px;
 }
-.header .search-form {
-	top: 64px;
-}
-.header .search-form input {
-	width: 260px;
-	height: 45px;
-	line-height: 45px;
-}
-.header .search-form button {
-	height: 45px;
-	line-height: 45px;
-}
+
 .header.style2 .single-widget {
 	margin-right: 18px;
 	padding-left: 36px;
@@ -157,6 +146,7 @@ Version:	1.1
 	font-size: 28px;
 	font-weight: 600;
 	line-height: 35px;
+	
 }
 .slider .single-slider .text {
 	margin-top: 80px;
@@ -318,54 +308,7 @@ Version:	1.1
 .our-mission-image {
 	height: 400px;
 }
-.doctor-details-area .doctor-details-right {
-	padding-left: 0;
-	padding-top: 40px;
-}
-.doctor-details-item .doctor-name .name {
-	font-size: 24px;
-}
-.doctor-details-item .doctor-name .deg {
-	font-size: 19px;
-	margin: 5px 0 5px 0;
-}
-.doctor-details-item .doctor-name .degree {
-	font-size: 14px;
-}
-.login .login-left {
-	height: 400px;
-}
-.register .register-left {
-	height: 400px;
-}
-.pf-details .date ul li {
-	margin-right: 25px;
-	font-size: 13px;
-}
-.pf-details .body-text h3 {
-	font-size: 24px;
-	font-weight: 600;
-	color: #333;
-	margin-top: 30px;
-}
-.doctor-calendar-table table thead tr th {
-	font-size: 14px;
-}
-.doctor-calendar-table table tbody tr td h3 {
-	font-size: 14px;
-}
-.doctor-calendar-table table tbody tr td span.time {
-	font-size: 14px;
-}
-.footer .single-footer {
-	margin: 20px 0;
-}
-.footer .single-footer h2 {
-	padding-bottom: 20px;
-}
-.footer .footer-top {
-	padding: 65px 0px;
-}
+
 
 
 
@@ -479,7 +422,7 @@ Version:	1.1
 	color:#2C2D3F;
 }
 .slicknav_nav li:hover .slicknav_arrow{
-	color:#1A76D1;
+	color:#48664D;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
@@ -562,15 +505,7 @@ Version:	1.1
 	font-weight: 400;
 	font-size: 13px;
 }
-.header .top-link {
-	float: none;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.header .top-contact {
-	float: none;
-	text-align: center;
-}
+
 .slider .single-slider {
 	height: 380px;
 }
@@ -642,28 +577,8 @@ Version:	1.1
 	padding-top: 105px;
 	font-size: 20px;
 }
-.fun-facts.section{
-	padding:70px 0;
-}
-.fun-facts .single-fun{
-	margin:0;
-	margin:15px 0;
-	position:relative;
-}
-.fun-facts .single-fun {
-	margin: 35px 0;
-	padding-top: 60px;
-	text-align: center;
-}
-.fun-facts .single-fun i {
-	left: 50%;
-	margin-left: -35px;
-	top:0;
-	position:absolute;
-}
-.fun-facts .single-fun .content {
-	padding:0;
-}
+
+
 .why-choose .choose-right {
 	height: 350px;
 	margin-top: 30px;
@@ -699,175 +614,7 @@ Version:	1.1
 	width: 100%;
 	margin: 0;
 }
-.services-details-img {
-	margin-bottom: 30px;
-}
-.service-details-inner h2 {
-	font-size: 24px;
-}
-.testimonials {
-	padding-bottom: 100px;
-}
-.testimonials .owl-dots {
-	transform: translateX(-18%);
-}
-.departments .department-tab .nav li {
-	margin: 0px 10px;
-}
-.departments .department-tab .nav li a {
-	color: #fff;
-	margin-top:10px;
-	padding: 0 3px 12px 3px;
-}
-.departments .department-tab .nav li a i {
-	font-size: 38px;
-}
-.departments .department-tab .nav li .first {
-	padding-top: 6px;
-	font-size: 14px;
-}
-.departments .department-tab .nav li .second {
-	font-size: 13px;
-	font-weight: 400;
-	color: #868686;
-	margin-top: 0px;
-}
-.departments .department-tab .tab-pane .department-left h3 {
-	font-size: 22px;
-	padding-bottom: 12px;
-	margin-bottom: 20px;
-}
-.departments .department-tab .tab-pane .department-left .p1 {
-	margin-bottom: 12px;
-}
-.departments .department-tab .tab-pane .department-left p {
-	margin-bottom: 15px;
-}
-.departments .department-right{
-	margin-top:30px;
-}
 
-.departments .department-right img{
-	height:100%;
-	width:100%;
-}
-.appointment.single-page {
-	padding: 50px 0;
-}
-.appointment.single-page .work-hour {
-	margin-top: 30px;
-}
-.blog .single-news {
-	margin: 15px 0;
-}
-.news-single .single-main {
-	margin-top:0px;
-}
-.news-single .single-main {
-	padding: 15px;
-}
-.news-single .news-title {
-	font-size: 20px;
-	font-weight: 500;
-}
-.news-single .news-title a{
-	font-size: 20px;
-	font-weight: 500;
-}
-.news-single .meta-right {
-	float: none;
-	display: inline-block;
-	margin-top: -6px;
-	margin-left: 56px;
-	float: left;
-}
-.news-single .image-gallery .single-image {
-	margin: 10px 0;
-}
-.news-single .image-gallery {
-	margin-bottom: 10px;
-}
-.news-single .social-share li {
-	float: left;
-	display: inline-block;
-	margin: 5px;
-}
-.news-single .prev-next {
-	float: none;
-	text-align: center;
-	display: inline-block;
-}
-.news-single .prev-next li {
-	margin-top: 10px;
-}
-.news-single .single-comments.left .main {
-	margin-left:0px;
-}
-.news-single .single-comments .main {
-	padding-left: 100px;
-	position: relative;
-	margin-left: 100px;
-	margin: 0;
-}
-.news-single .single-comments .body {
-	float: none;
-	width: 100%;
-}
-.news-single .single-comments img {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.news-single .blog-comments {
-	padding: 15px;
-}
-.news-single .comments-form {
-	padding: 15px;
-}
-.main-sidebar .single-widget {
-	padding: 20px;
-}
-.newsletter .subscribe-text {
-	text-align: center;
-	margin-bottom: 25px;
-}
-.newsletter .subscribe-form {
-	text-align: center;
-}
-.newsletter .common-input {
-	height: 50px;
-	width: 100%;
-	margin: 0;
-}
-.newsletter .btn {
-	height: 50px;
-	line-height: 50px;
-	width: 100%;
-	margin: 0;
-	margin-top: 14px;
-}
-.error-page .error-inner h1 {
-	font-size: 80px;
-}
-.error-page .error-inner h1 span {
-	font-size: 17px;
-}
-.error-page .search-form input {
-	width: 100%;
-	display: block;
-}
-.error-page .search-form .btn {
-	top:0;
-	width: 100%;
-	display: block;
-	margin-top: 15px;
-}
-.mail-seccess .success-inner h1 {
-	font-size: 80px;
-}
-.mail-seccess .success-inner h1 span {
-	font-size: 17px;
-}
 .about-image {
 	height: 300px;
 }
@@ -893,86 +640,7 @@ Version:	1.1
 }
 .our-mission-image {
 	height: 300px;
-}
-.contact-us #myMap {
-	height: 300px;
-}
-.contact-us .contact-us-form h2 {
-	font-size: 25px;
-}
-.contact-us .single-info {
-	margin: 10px 0;
-}
-.contact-us .contact-us-form {
-	padding: 30px 30px;
-}
-.doctor-details-area .doctor-details-right {
-	padding-left: 0;
-	padding-top: 30px;
-}
-.doctor-details-item .doctor-details-contact {
-	padding: 30px;
-}
-.doctor-details-item .doctor-name .name {
-	font-size: 20px;
-}
-.doctor-details-item .doctor-name .deg {
-	font-size: 18px;
-	margin: 5px 0 5px 0;
-}
-.doctor-details-item .doctor-name .degree {
-	font-size: 14px;
-}
-.doctor-details-item .doctor-details-biography h3 {
-	font-size: 20px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-.doctor-details-area .doctor-details-left .social li {
-	display: inline-block;
-	margin-right: 5px;
-}
-.doctor-details-item .doctor-details-contact h3 {
-	margin-bottom: 20px;
-}
-.doctor-details-item .doctor-details-work h3 {
-	font-size: 20px;
-	margin-top: 25px;
-	margin-bottom: 20px;
-}
-.login .login-left {
-	height: 300px;
-}
-.login .form .btn {
-	height:50px;
-	line-height:50px;
-	padding:0;
-	padding:0px 20px;
-}
-.login .form {
-	margin-top: -25px;
-}
-.register .register-left {
-	height: 300px;
-}
-.register .form .btn {
-	height:50px;
-	line-height:50px;
-	padding:0;
-	padding:0px 20px;
-}
-.register .form {
-	margin-top: -25px;
-}
-.contact-us .form .btn {
-	height:50px;
-	line-height:50px;
-	padding:0;
-	padding:0px 20px;
-}
-.contact-us .form {
-	margin-top: -25px;
-}
+ }
 .pf-details .date ul li {
 	margin-right: 25px;
 	font-size: 13px;
@@ -996,219 +664,151 @@ Version:	1.1
 .pf-details .image-slider .owl-nav {
 	display: none;
 }
-.doctor-calendar-table table thead tr th {
-	font-size: 14px;
-}
-.doctor-calendar-table table tbody tr td h3 {
-	font-size: 14px;
-}
-.doctor-calendar-table table tbody tr td span.time {
-	font-size: 14px;
-}
-.footer .single-footer {
-	margin: 15px 0;
-}
-.footer .single-footer h2 {
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-}
-.footer .footer-top {
-	padding: 50px 0px 60px 0;
-}
-.footer .single-footer.f-link ul {
-	margin-bottom: 12px;
-}
-.footer .single-footer.f-link ul li a{
-	display:inline-block;
-}
-.footer .copyright {
-	padding: 20px 0;
-}
 
 
-}
+
+
 /* Mobile Screen */
+/* Genel ayarlamalar */
 @media only screen and (max-width: 450px) {
+    /* Header düzenlemeleri */
+    .header .logo {
+        margin-top: 10px;
+        height: 15px; /* Logo boyutunu küçük ekran için ayarlama */
+    }
 
- .logo img{
-	height: 20px;
-	
-}
-.section{
-	padding:50px 0px;
-}
-.section-title {
-	margin-bottom: 30px;
-	padding: 0px 20px;
-}
-.section-title h2 {
-	font-size: 22px;
-	margin-bottom: 10px;
-}
-.section-title p {
-	font-size: 13px;
-}
-.btn {
-	padding: 11px 20px;
-	font-weight: 400;
-	font-size: 13px;
-}
-.slicknav_btn
-{
-	margin-top: 5px;
-}
+    .logo img {
+        height: 15px; /* Logo resminin boyutu */
+    }
 
-.slicknav_menu 
-{
-	display: block;
-	background: white;
-	padding: 0;
-}
+    .header .header-inner {
+        height: 70px; /* Mobilde başlık kısmının yüksekliği */
+    }
 
-.header .header-inner
-{
-	height: 50px;
-}
+    .header .navbar {
+        margin-top: 0;
+        height: auto; /* Navbar'ın yüksekliği */
+    }
 
-.header .top-link {
-	float: none;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.header .top-contact {
-	display: flex; 
-		justify-content: flex-end;
-		 align-items: center; 
-		 gap: 7.3px; 
-		 margin: 0; 
-		 padding: 0; list-style:none; margin-right: 10px;
- }
-.header .top-contact li a
-{
-	font-size: 5px;
-}
-.slider .single-slider {
-	height: 380px;
-}
-.schedule {
-	background: #fff;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	padding: 50px 0;
-	border-bottom:1px solid #eee;
-}
-.schedule .schedule-inner {
-	transform: none;
-}
-.schedule .single-schedule{
-	margin:15px 0;
-}
+    .header .nav {
+        margin-top: 10px; /* Navigasyon öğeleri arasındaki boşluk */
+        flex-direction: column; /* Navbar öğelerini dikey sıralama */
+        align-items: center; /* Ortalayın */
+    }
 
-.schedule .single-schedule .inner
-{
-	height: 200px;
-	padding: 7px;
-}
+    .header .nav li a {
+        font-size: 12px; /* Link yazı boyutunu küçült */
+        padding: 15px 10px; /* Buton içi boşluk */
+    }
 
-.slider .single-slider{
-	position:relative;
-}
-.slider .single-slider:before{
-	position:absolute;
-	content:"";
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	background:black;
-	opacity:0.3;
-}
-.slider .single-slider h1 {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 25px;
-}
-.slider .single-slider p{
-	font-size:13px;
-}
-.slider .single-slider .text {
-	margin-top: 20px;
-}
-.slider .single-slider .button .btn{
-	margin:0;
-	width:100%;
-	margin-bottom:10px;
-}
-.slider .single-slider .button .btn:last-child{
-	margin-bottom:0;
-}
-.slider .owl-carousel .owl-nav {
-	display:inline-block;
-}
-.Feautes .single-features .signle-icon i {
-	font-size: 42px;
-	left: 50%;
-	margin-left: -40px;
-	height:80px;
-	width: 80px;
-	line-height: 80px;
-}
-.Feautes .single-features::before {
-	display:none;
-}
-.Feautes .single-features {
-	text-align: center;
-	position: relative;
-	padding:0px;
-	margin: 15px 0;
-}
-.Feautes .single-features h3 {
-	padding-top: 105px;
-	font-size: 20px;
- }
- section.Feautes.section
- {
-	padding: 10px 0px;
- }
+    .header .nav li a i {
+        font-size: 11px; /* Icon boyutunu küçült */
+    }
 
-.why-choose .choose-right {
-	height: 350px;
-	margin-top: 30px;
-}
-.call-action .content {
-	padding: 0;
-	padding: 70px 0;
-}
-.call-action .content h2 {
-	font-size: 28px;
-	line-height: 40px;
-}
-.services .single-service {
-	margin: 20px 0;
-}
-.services .single-service h4 {
-	margin-bottom: 15px;
-}
-.services-details-img blockquote {
-	padding: 25px;
-}
-.services-details-img blockquote i{
-	display:none;
-}
+    .header .right-bar a {
+        height: 30px; /* Sağdaki icon boyutu */
+        width: 30px;
+        font-size: 10px; /* Font boyutunu küçült */
+    }
+	@media only screen and (max-width: 450px) {
+		    /* Slider yüksekliği mobilde daha küçük */
+			.slider .single-slider {
+				height: 400px; /* Daha küçük yükseklik */
+			}
+		
+			/* Başlık font boyutunu küçültüyoruz */
+			.slider .single-slider h1 {
+				font-size: 20px; /* Daha küçük başlık fontu */
+				line-height: 20px;
+				color: #2C2D3F;
+			}
+		
+			/* Paragraf font boyutunu küçültüyoruz */
+			.slider .single-slider p {
+				font-size: 14px; /* Küçük metin boyutu */
+				margin-top: 15px;
+				color: black;
+			}
+		
+			/* Butonlar için düzenleme */
+			.slider .single-slider .button {
+				margin-top: 20px;
+				margin-left: 0px;
+				text-align: center;
+			}
+		
+			/* Buton boyutlarını küçültüyoruz */
+			.slider .single-slider .btn {
+				font-size: 12px; /* Daha küçük buton metni */
+				padding: 8px 12px; /* Buton içindeki boşlukları küçültüyoruz */
+			}
+		
+			/* Navigasyon butonlarını küçültüyoruz */
+			.slider .owl-carousel .owl-nav div {
+				height: 35px; /* Daha küçük butonlar */
+				width: 35px;
+				font-size: 20px;
+			}
+		
+			/* Navigasyonun üst boşluğunu kaldırıyoruz */
+			.slider .owl-carousel .owl-nav {
+				margin-top: 0;
+			}
+		
+			/* Slider opacity ayarını mobilde biraz daha düşük yapıyoruz */
+			.slider .single-slider:before {
+				opacity: 0.5; /* Opasiteyi artırarak daha net içerik görünüyor */
+			}
+
+			.slicknav_menu {
+				background-color: #fff;
+			}
+		}
+	}
+    /* Schedule düzenlemeleri */
+    .schedule {
+        background: #fff;
+        margin: 0;
+        padding: 50px 0;
+        height: auto;
+        border-bottom: 1px solid #eee;
+    }
+
+    .schedule .single-schedule {
+        margin: 15px 0;
+    }
+
+    .schedule .single-schedule .inner {
+        height: 200px;
+        padding: 7px;
+    }
+
+    /* Feautes (özellikler) düzenlemeleri */
+    .Feautes .single-features .signle-icon i {
+        font-size: 42px; /* Ikon boyutunu ayarla */
+        left: 50%;
+        margin-left: -40px;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+    }
+
+    .Feautes .single-features {
+        text-align: center;
+        position: relative;
+        padding: 0px;
+        margin: 15px 0;
+    }
+
+    .Feautes .single-features h3 {
+        padding-top: 105px;
+        font-size: 20px; /* Başlık boyutunu ayarla */
+    }
+
+    section.Feautes.section {
+        padding: 10px 0px;
+    }
 
 
-.our-vision-area {
-	padding-bottom: 45px;
-}
-.our-mission-content ul li {
-	-ms-flex: 0 0 50%;
-	-webkit-box-flex: 100%;
-	flex: 100%;
-	max-width:100%;
-	margin: 5px 0;
-}
-
-
-
+    
 }

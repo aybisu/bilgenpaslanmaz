@@ -110,37 +110,13 @@ body{
 /*===================
 	Start Header CSS 
 =====================*/
-.header .top-contact {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 25px;
-}
 
-.header .top-contact li {
-    color: #2C2D3F;
-}
-
-.header .top-contact li a {
-    font-size: 14px;
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-.header .top-contact li a:hover {
-    color: #48664D;
-}
-
-.header .top-contact li i {
-    color: #48664D;
-    margin-right: 8px;
-}
 
 .header .header-inner {
     background: #fff;
     z-index: 999;
     width: 100%;
+	height: 90px;
 }
 
 .get-quote {
@@ -153,7 +129,7 @@ body{
 }
 
 .header .logo {
-    margin-top: 1px;
+    margin-top: 30px;
 }
 
 .header .navbar {
@@ -168,6 +144,7 @@ body{
 .header .nav {
     display: flex;
     gap: 15px;
+	margin-top: 20px;
 }
 
 .header .nav li {
@@ -303,10 +280,6 @@ body{
     background: #27AE60;
 }
 
-.header .search-top.active .search i:before {
-    content: "\eee1";
-    font-size: 15px;
-}
 
 
 /* Header Sticky */
@@ -361,6 +334,8 @@ body{
 }
 .slider .single-slider .button{
 	margin-top:30px;
+	margin-left:90px ;
+	width: 100%;
 }
 .slider .single-slider .btn{
 	color:#fff;
@@ -662,92 +637,126 @@ body{
 /*===================
 	Why choose CSS
 =====================*/
-.why-choose .choose-left h3{
-	font-size:24px;
-	font-weight:600;
-	color:#2C2D3F;
-	position:relative;
-	padding-bottom:20px;
-	margin-bottom:24px;
+/* Başlık */
+/* Genel Stil - 3D görünüm için kenarlık ve gölge */
+.why-choose {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    border: 5px solid #48664D; /* Yeşil kenarlık */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 0 15px rgba(0, 0, 0, 0.1);  /* 3D etkisi için gölge */
+    position: relative;
+    overflow: hidden; /* Sınırlama, içerik dışına taşmaması için */
 }
-.why-choose .choose-left h3:before{
-	position:absolute;
-	content:"";
-	left:0;
-	bottom:0;
-	height:2px;
-	width:50px;
-	background:#48664D;
+
+/* Başlık ve alt çizgi */
+.why-choose .choose-left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2C2D3F;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Harfler arasına boşluk */
 }
-.why-choose .choose-left p{
-	margin-bottom:35px;
+
+/* Başlık alt çizgi */
+.why-choose .choose-left h3:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #48664D;
 }
-.why-choose .choose-left .list{}
+
+/* Açıklama metni */
+.why-choose .choose-left p {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4d4d4d;
+}
+
+/* Liste */
+.why-choose .choose-left .list {
+    padding-left: 0;
+    list-style: none;
+}
+
 .why-choose .choose-left .list li {
-	color: #868686;
-	margin-bottom: 12px;
-}
-.why-choose .choose-left .list li:last-child{
-	margin-bottom:0px;
-}
-.why-choose .choose-left .list li i{
-	height:15px;
-	width:15px;
-	line-height:15px;
-	text-align:center;
-	background: #049f3f;
-	color:#fff;
-	font-size:14px;
-	border-radius:100%;
-	padding-left:2px;
-	margin-right:16px;
-}
-/* Start Faq CSS */
-.why-choose{
-	background:#fff;
-}
-.why-choose .choose-right{
-	height:80%;
-	width:100%;
-	background-image:url('img/bilgenvideo.mov');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	position:relative;
-	margin-left: 150px;
-	
+    color: #868686;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-video{
-	height: 400px;
-	margin-left: "-60px";
+/* Liste son elemanı */
+.why-choose .choose-left .list li:last-child {
+    margin-bottom: 0;
 }
+
+/* Liste ikonları */
+.why-choose .choose-left .list li i {
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #049f3f;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 100%;
+    padding-left: 2px;
+    margin-right: 16px;
+}
+
+/* Sağ kısımda video alanı ve 3D görünüm */
+.why-choose .choose-right {
+    height: 80%;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 100px;
+    border-radius: 10px; /* Sağdaki video bölümüne yuvarlatılmış kenarlar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 0 15px rgba(0, 0, 0, 0.1); /* Video kutusuna 3D gölge ekle */
+}
+
+video {
+    height: 400px;
+    margin-left: -60px;
+    border-radius: 10px; /* Video kutusuna yuvarlatılmış kenarlar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Video kutusuna dışarıdan gölge */
+}
+
 .why-choose .choose-right .video {
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	text-align: center;
-	border-radius: 100%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -60px;
-	margin-top: -35px;
-	font-size: 21px;
-	background: #48664D;
-	padding-left: 4px;
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -35px;
+    font-size: 21px;
+    background: #48664D;
+    padding-left: 4px;
 }
 
-
-	
+/* Mobil cihazlar için video boyutları */
 @media only screen and (max-width: 450px) {
-	
-	video{
-		margin-left: -70px;
-		height: 300px;
-	}
+    video {
+        margin-left: -70px;
+        height: 300px;
+    }
 }
+
 
 /*=======================
 	End Why choose CSS
@@ -763,134 +772,92 @@ video{
 /*=========================
 	Start About Us CSS
 ===========================*/
-.about-area {
-  position: relative;
-  z-index: 1;
-}
-.about-image {
-  width: 100%;
-  height: 100%;
-  background-image: url(img/about-img.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.about-image img {
-  display: none;
-}
-.about-content {
-  max-width: 555px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 50px;
-}
-.about-content span {
-  display: block;
-  margin-bottom: 5px;
-  color: #48664D;
-  font-size: 17px;
-}
-.about-content h2 {
-  margin-bottom: 0;
-  line-height: 1.3;
-  font-size: 40px;
-  font-weight: 600;
-}
-.about-content p {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.about-content ul {
-  padding-left: 0;
-  list-style-type: none;
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-.about-content ul li {
-  margin-bottom: 16px;
-  position: relative;
-  padding-left: 34px;
-}
-.about-content ul li i {
-	width: 25px;
-	height: 25px;
-	line-height: 25px;
-	text-align: center;
-	border-radius: 100%;
-	background-color: #48664D2B;
-	color: #48664D;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-	display: inline-block;
-	font-size: 11px;
-	position: absolute;
-	left: 0;
-	top: -2px;
-}
-.about-content ul li:hover i {
-  background-color: #48664D;
-  color: #ffffff;
-}
-.about-content ul li:last-child {
-  margin-bottom: 0;
-}
-.about-content .btn {
-  margin-top: 30px;
-}
+
 
 
 /* Product Card */
-.card {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
+/* Genel Stil */
+
+
+/* Features Section */
+.features .section-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.card:hover {
+.features h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.features p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Ürün Kartları */
+/* Ürün Kartı */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    max-height: 500px; /* Kartın yüksekliğini sınırla */
+}
+
+.product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-    object-fit: contain;
+/* Ürün Resmi Konteynırı */
+.product-image {
+    margin: 10px; /* Resim konteynırına margin ekledik */
+    width: 100%; /* Kapsayıcı alanın genişliğini %100 yapıyoruz */
+    height: 200px; /* Resim için sabit bir yükseklik belirliyoruz */
+    overflow: hidden; /* Resmin taşmasını engelliyoruz */
+}
+
+/* Ürün Resmi */
+.product-image img {
     width: 100%;
-    height: 200px;
-    transition: transform 0.3s ease;
+    height: 100%; /* Resmi sabit yükseklikte tutuyoruz */
+    object-fit: contain; /* Resmin boyutunun orantılı olarak yerleşmesini sağlıyoruz */
+	margin: auto;
 }
 
-.card img:hover {
-    transform: scale(1.1);
-}
-
-.card-body {
-    background-color: #f9f9f9;
-    padding: 20px;
+/* Ürün Bilgisi Alanı */
+.product-info {
+    padding: 12px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
-.card-title {
-    font-size: 1.4rem;
-    font-weight: 700;
+/* Ürün Başlık */
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
     color: #333;
+    margin-bottom: 10px;
+}
+
+/* Ürün Açıklaması */
+.product-description {
+    font-size: 0.75rem;
+    color: #666;
     margin-bottom: 15px;
 }
 
-.card-text {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
+/* Butonlar */
 .btn {
-    padding: 12px 20px;
+    padding: 6px 10px;
     background-color: #48664D;
     border-radius: 25px;
     color: white;
@@ -899,96 +866,64 @@ video{
     text-align: center;
     transition: background-color 0.3s ease;
     border: none;
+    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #537759;
 }
 
-/* Mobil için ürün kartlarını küçültme */
-@media (max-width: 767px) {
-    .card {
-        width: 90%; /* Kartların genişliğini %100 yap */
-        margin-bottom: 20px; /* Kartlar arasında daha fazla boşluk bırak */
-        height: 200px;
+/* Mobilde kart düzenlemeleri */
+@media (max-width: 450px) {
+    .product-card {
+        max-height: 400px; /* Kartın boyutunu mobilde küçültüyoruz */
     }
 
-    .card img {
-        height: 200px; /* Görsellerin boyutlarını küçült */
-        object-fit: contain;
-        margin: auto;
+    .product-title {
+        font-size: 1rem;
     }
 
-    .card-title {
-        font-size: 1.2rem; /* Başlık boyutunu küçült */
+    .product-description {
+        font-size: 0.75rem;
     }
 
-    .card-text {
-        font-size: 0.9rem; /* Metin boyutunu küçült */
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-image {
+        height: 180px; /* Resim boyutunu mobilde küçültüyoruz */
     }
 
     .btn {
-        padding: 10px 15px; /* Buton boyutlarını küçült */
-        font-size: 0.9rem; /* Buton yazı boyutunu küçült */
+        padding: 5px 8px;
     }
 }
 
 
-@media only screen and (max-width: 450px) {
-	
-    .card img {
-        height: 150px; /* Görsellerin boyutlarını küçült */
-        object-fit: contain;
-        margin: auto;
+@media (max-width: 450px) {
+    .product-row {
+        justify-content: center;
     }
 
-	.card {
-		height: 200px;
-	}
-}
+    .col {
+        flex: 1 1 100%; /* Mobilde her kart tam genişlikte olacak */
+        max-width: 100%;
+    }
 
+    .features h2 {
+        font-size: 1.5rem;
+    }
 
-
-/* Genel resim kapsayıcı stili */
-.image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.image-container-img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Tablet için responsive düzenleme */
-@media (max-width: 991px) {
-    .image-container-img {
-        max-width: 80%;
+    .features p {
+        font-size: 0.9rem;
     }
 }
 
-/* Mobil için responsive düzenleme */
-@media (max-width: 767px) {
-    .image-container-img {
-        max-width: 90%;
-    }
 
-    .carousel-caption .slider-btn {
-        font-size: 0.8rem;  /* Daha küçük yazı */
-        padding: 8px 10px;
-    }
 
-    .carousel-caption .slider-btn {
-        visibility: visible !important;
-    }
-    
-}
+
+
 
 
 
@@ -1066,3 +1001,113 @@ video{
   .section {
 	padding: 0px;
   }
+
+
+/* Genel stil */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Yazı stili */
+.whatsapp-text {
+    display: inline;
+	color: white;
+}
+
+/* Laptop ve tablet için yazıyı göster */
+@media (min-width: 768px) {
+    .whatsapp-text {
+        display: inline;
+    }
+}
+
+/* Telefon için yazıyı gizle */
+@media (max-width: 767px) {
+    .whatsapp-text {
+        display: none;
+    }
+
+    .whatsapp-button {
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+		margin-right:10px ;
+    }
+
+    .whatsapp-icon {
+        margin-right: 0;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
+
+/* Genel stil */
+/* Genel stil */
+.sosyal-container {
+    text-align: center;
+    margin-top: 30px;
+	padding: 50px;
+}
+
+.sosyal-container .insta {
+    width: 100%;  /* Görselin genişliği %100 olacak */
+    max-width: 600px; /* Laptop için maksimum genişlik 450px */
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+	height: auto;
+}
+
+/* Tablet (min-width: 768px ve max-width: 1023px) */
+
+
+/* Mobil (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .sosyal-container .insta {
+        width: 80%;  /* Mobil için görsel genişliği %80 */
+        max-width: 500px; /* Maksimum genişlik 280px */
+        margin-top: 30px;
+		height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 450px) 
+{
+	.sosyal-container .insta {
+        width: 100%;  /* Mobil için görsel genişliği %80 */
+        max-width: 600px; /* Maksimum genişlik 280px */
+        margin-top: 30px;
+		height: auto;
+    }
+}
