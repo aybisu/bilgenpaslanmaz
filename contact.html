@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -13,12 +13,12 @@
     <!-- Title -->
     <title>Bilgen - Paslanmaz</title>
     
-    <!-- Favicon -->
+	<!-- Favicon -->
     <link rel="icon" href="img/favicon.png">
-    
+		
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Nice Select CSS -->
@@ -42,17 +42,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
     <style>
 
  
 
-    .iletisim {
-        background-color: #48664D;
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-    }
+.iletisim {
+    background-color: #48664D;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;  /* Adjust this value according to your navbar height */
+}
+
 
     .iletisim h1 {
         font-size: 2.5rem;
@@ -130,53 +132,31 @@
 
 </head>
 <body>
-    <!-- Header Area -->
+   
+ 
     <header class="header">
-        <!-- Topbar -->
-      
-        <!-- End Topbar -->
-
-        <!-- Header Inner -->
-        <div class="header-inner">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <!-- Start Logo -->
-                            <div class="logo">
-                                <a href="index.html"><img src="img/logo.png" alt="#"></a>
-                            </div>
-                            <!-- End Logo -->
-                            <!-- Mobile Nav -->
-                            <div class="mobile-nav"></div>
-                            <!-- End Mobile Nav -->
-                        </div>
-                        <div class="col-lg-7 col-md-9 col-12">
-                            <!-- Main Menu -->
-                            <div class="main-menu">
-                                <nav class="navigation">
-                                    <ul class="nav menu">
-                                        <li><a href="index.html">Anasayfa</a></li>
-                                        <li><a href="about.html">Hakkımızda</a></li>
-                                        <li><a href="products.html">Ürünlerimiz</a></li>
-                                        <li><a href="contact.html">iletişim </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!--/ End Main Menu -->
-                        </div>
-                        <div class="col-lg-2 col-12">
-                            <div class="get-quote">
-                                <a href="contact.html" class="btn">Bilgi Al</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
             </div>
+    
+            <!-- Menü Butonu (Mobilde görünecek) -->
+            <div class="mobile-nav" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Menü -->
+            <nav class="nav-menu">
+                <a href="index.html">Anasayfa</a>
+                <a href="about.html">Hakkımızda</a>
+                <a href="products.html">Ürünlerimiz</a>
+                <a href="contact.html">İletişim</a>
+            </nav>
         </div>
-        <!--/ End Header Inner -->
     </header>
-  
+
+    
 
    <!-- Header Section -->
    <div class="iletisim">
@@ -189,27 +169,86 @@
         <h3>İletişim Bilgilerimiz</h3>
         <div class="contact-item">
             <i class="icofont-phone"></i>
-            <p><strong>Telefon:</strong> +90 123 456 7890</p>
-            
+            <p><strong>Telefon:</strong> +90 537 701 4523</p>
         </div>
         <div class="contact-item">
             <i class="icofont-phone"></i>
-            
-            <p><strong>Telefon:</strong> +90 123 456 7890</p>
+            <p><strong>Telefon:</strong> +90 533 423 0503</p>
         </div>
         <div class="contact-item">
             <i class="icofont-email"></i>
-            <p><strong>Email:</strong> iletisim@bilgen.com.tr</p>
+            <p><strong>Email:</strong> bilgeniletisim0@gmail.com</p>
         </div>
         <div class="contact-item">
             <i class="icofont-location-pin"></i>
             <p><strong>Adres:</strong> Bilgen Paslanmaz, Yalova-Bursa yolu 6.km, Yalova, Türkiye</p>
         </div>
-        <div class="text-center">
-         
+
+        <!-- Instagram Section with Button Next to It -->
+        <div class="contact-item instagram-item">
+            <i class="icofont-social-instagram"></i>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/bilgenpaslanmaz/" target="_blank" style="color: black;">@bilgenpaslanmaz</a></p>
+            <a href="https://www.instagram.com/bilgenpaslanmaz/" target="_blank" class="btn-instagram">
+                <i class="icofont-instagram"></i> Instagram
+            </a>
         </div>
+        
     </div>
 </div>
+
+<!-- Stil (Opsiyonel) -->
+<style>
+    .btn-instagram {
+        display: inline-block;
+        background-color: #E1306C;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 16px;
+        margin-left: 20px;
+        transition: background-color 0.3s ease;
+    }
+    .btn-instagram:hover {
+        background-color: #C13584;
+    }
+
+    .instagram-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .instagram-item i {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    .instagram-item p {
+        font-size: 1.1rem;
+    }
+
+    .instagram-item a {
+        margin-left: 20px;
+        color: white;
+    }
+     
+
+    @media only screen and (max-width: 450px) {
+        .btn-instagram
+        {
+            font-size: 10px;
+            padding: 5px 1px;
+            text-align: center;
+           
+        }
+        .instagram-item a{
+            color: #fff;
+        }
+    }
+</style>
+
+
 
 <!-- Google Map Section -->
 <div class="container map-container">
@@ -225,9 +264,61 @@
     </div>
 </footer>
 
+	<!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+
+    <div class="breadcrumb">
+     
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
 
 </body>
 </html>
 =======
 
->>>>>>> 2c00e277e7c58262b265311332b4cd1408bf594d

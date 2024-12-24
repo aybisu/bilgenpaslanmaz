@@ -43,10 +43,24 @@
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="css/responsive.css">
+     <link rel="stylesheet" href="navbar.css">
 
     <style>
        
+       * {
+    box-sizing: border-box;
+      }
+    
 
+        .about-container
+        {
+           
+       max-width: 100%;
+       padding: 0 15px;
+         margin: 0 auto;
+
+
+        }
         .about-section {
             background-color: #ffffff;
             padding: 50px 0;
@@ -182,53 +196,29 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- Header Area -->
+ 	
     <header class="header">
-        <!-- Topbar -->
-      
-        <!-- End Topbar -->
-
-        <!-- Header Inner -->
-        <div class="header-inner">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <!-- Start Logo -->
-                            <div class="logo">
-                                <a href="index.html"><img src="img/logo.png" alt="#"></a>
-                            </div>
-                            <!-- End Logo -->
-                            <!-- Mobile Nav -->
-                            <div class="mobile-nav"></div>
-                            <!-- End Mobile Nav -->
-                        </div>
-                        <div class="col-lg-7 col-md-9 col-12">
-                            <!-- Main Menu -->
-                            <div class="main-menu">
-                                <nav class="navigation">
-                                    <ul class="nav menu">
-                                        <li><a href="index.html">Anasayfa</a></li>
-                                        <li><a href="about.html">Hakkımızda</a></li>
-                                        <li><a href="products.html">Ürünlerimiz</a></li>
-                                        <li><a href="contact.html">iletişim </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!--/ End Main Menu -->
-                        </div>
-                        <div class="col-lg-2 col-12">
-                            <div class="get-quote">
-                                <a href="contact.html" class="btn">Bilgi Al</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
             </div>
+    
+            <!-- Menü Butonu (Mobilde görünecek) -->
+            <div class="mobile-nav" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Menü -->
+            <nav class="nav-menu">
+                <a href="index.html">Anasayfa</a>
+                <a href="about.html">Hakkımızda</a>
+                <a href="products.html">Ürünlerimiz</a>
+                <a href="contact.html">İletişim</a>
+            </nav>
         </div>
-        <!--/ End Header Inner -->
     </header>
+    <!-- End Header Area -->
 
     <!-- About Us Section -->
     <section class="about-section">
@@ -239,7 +229,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/500x350" alt="About Us Image">
+                    <img src="img/3.png" alt="About Us Image">
                 </div>
                 <div class="about-text">
                     <h2>Vizyonumuz</h2>
@@ -265,6 +255,18 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="breadcrumb">
+     
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

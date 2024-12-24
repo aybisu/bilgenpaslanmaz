@@ -41,6 +41,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="navbar.css">
 		
     </head>
     <body>
@@ -48,63 +49,30 @@
 	
 		
 	
-	
-		<!-- Header Area -->
-		<header class="header" >
-<!-- Topbar -->
-
-
-<!-- End Topbar -->
-
-			<!-- End Topbar -->
-			<!-- Header Inner -->
-			<div class="header-inner">
-				<div class="container">
-					<div class="inner">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-12">
-								<!-- Start Logo -->
-								<div class="logo">
-									<a href="index.html"><img src="img/logo.png" alt="#"></a>
-								</div>
-								<!-- End Logo -->
-								<!-- Mobile Nav -->
-								<div class="mobile-nav"></div>
-								<!-- End Mobile Nav -->
-							</div>
-							<div class="col-lg-7 col-md-9 col-12">
-								<!-- Main Menu -->
-								<div class="main-menu">
-									<nav class="navigation">
-										<ul class="nav menu">
-											<!--<li class="active"><a href="index.html">Anasayfa <i class="icofont-rounded-down"></i></a>-->
-												<li><a href="index.html">Anasayfa</a></li>
-												<li><a href="about.html">Hakkımızda</a></li>
-											
-											<li><a href="products.html">Ürünlerimiz </a></li>
-                                            <li><a href="contact.html">İletişim </a></li>
-											
-											
-											
-											
-											
-										</ul>
-									</nav>
-								</div>
-								<!--/ End Main Menu -->
-							</div>
-							<div class="col-lg-2 col-12">
-								<div class="get-quote" >
-									<a href="contact.html" class="btn">bilgi al </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Header Inner -->
-		</header>
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+        
+                <!-- Menü Butonu (Mobilde görünecek) -->
+                <div class="mobile-nav" onclick="toggleMenu()">&#9776;</div>
+        
+                <!-- Menü -->
+                <nav class="nav-menu">
+                    <a href="index.html">Anasayfa</a>
+                    <a href="about.html">Hakkımızda</a>
+                    <a href="products.html">Ürünlerimiz</a>
+                    <a href="contact.html">İletişim</a>
+                </nav>
+            </div>
+        </header>
 		<!-- End Header Area -->
+
+        <!--
 		<!-- Slider Area -->
 <section class="slider">
     <div class="hero-slider">
@@ -127,12 +95,12 @@
         </div>
         <!-- End Single Slider -->
         <!-- Start Single Slider -->
-        <div class="single-slider" style="background-image:url('img/3.png')">
+        <div class="single-slider" style="background-image:url('img/vana2.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="text">
-                            <h1>304 Kalite <span>Paslanmaz</span> Tanklarda <span>Uzmanız!</span></h1>
+                           
                            
                           
                         </div>
@@ -255,7 +223,7 @@
                 <div class="product-info">
                     <h5 class="product-title">100 litre Zeytinyağı Tankı</h5>
                     <p class="product-description">304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.</p>
-                    <a href="#" class="btn btn-warning text-white">Detaylar</a>
+                    <a href="products.html" class="btn btn-warning text-white">incele</a>
                 </div>
             </div>
         </div>
@@ -269,7 +237,7 @@
                 <div class="product-info">
                     <h5 class="product-title">200 litre Zeytinyağı Tankı</h5>
                     <p class="product-description">304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.</p>
-                    <a href="#" class="btn btn-warning text-white">Detaylar</a>
+                    <a href="products.html" class="btn btn-warning text-white">ürünlere göz at </a>
                 </div>
             </div>
         </div>
@@ -283,7 +251,7 @@
                 <div class="product-info">
                     <h5 class="product-title">300 litre Zeytinyağı Tankı</h5>
                     <p class="product-description">304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.</p>
-                    <a href="#" class="btn btn-warning text-white">Detaylar</a>
+                    <a href="products.html" class="btn btn-warning text-white">ürünlere göz at</a>
                 </div>
             </div>
         </div>
@@ -371,11 +339,13 @@
 
 
                  <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Bilgen Paslanmaz. Tüm Hakları Saklıdır.</p>
-        </div>
-    </footer>
+   <!-- Footer -->
+<footer id="footer" class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 Bilgen Paslanmaz. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
                 
 
 
@@ -422,5 +392,16 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+
+        <div class="breadcrumb">
+     
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.nav-menu');
+                menu.classList.toggle('active');
+            }
+        </script>
     </body>
 </html>

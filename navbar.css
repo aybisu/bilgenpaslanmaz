@@ -1,0 +1,143 @@
+/* Genel Stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+/* Header */
+.header {
+    background-color: #F8F8FF;
+    padding: 10px 0;
+    position: fixed; /* Header sabit kalır */
+    top: 0; /* Ekranın üst kısmına yapışır */
+    left: 0; /* Sol tarafa hizalanır */
+    width: 100%; /* Tüm genişliği kaplar */
+    z-index: 1000; /* Diğer ögelerin altında kalmasını önler */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölgeli bir görünüm */
+}
+
+/* Sayfa içeriği */
+.content {
+    padding-top: 60px; /* Header yüksekliği kadar boşluk bırakılır */
+}
+
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Menü */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #f1c40f;
+}
+
+/* Mobil Menü Butonu */
+.mobile-nav {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Mobil ve Tablet İçin Menü */
+@media screen and (max-width: 768px) {
+    /* Menü gizli */
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    /* Menü elemanları */
+    .nav-menu a {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    /* Mobil Menü Butonu Görünür */
+    .mobile-nav {
+        display: block;
+        z-index: 1000;
+    }
+
+    /* Menü Açıldığında Görünür */
+    .nav-menu.active {
+        display: flex;
+        background-color: #F8F8FF;;
+        z-index: 1000;
+        
+    }
+
+    /* Tablet ve Mobilde Breadcrumb'ı Gizle */
+    .breadcrumb {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 450px)
+{
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        padding: 20px;
+        gap: 10px;
+    }
+}
+
+/* Masaüstü ve büyük ekranlarda Breadcrumb'ı göster */
+@media screen and (min-width: 1200px) {
+    .breadcrumb {
+        display: block;
+    }
+}

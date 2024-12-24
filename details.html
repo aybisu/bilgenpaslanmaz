@@ -1,0 +1,420 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Ürün Detayları - Bilgen Paslanmaz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <!-- Özelleştirilmiş Stil -->
+    <style>
+        /* Genel Stil */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Başlık Stil */
+        .header {
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Geri Tuşu */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #48664D;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: #537759;
+        }
+
+        /* Ürün Detay Bölümü */
+        .product-container {
+            padding-top: 60px; /* Geri tuşu için üstten boşluk */
+            padding-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Ürün Özellikleri */
+        #product-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        #product-features li {
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        #product-features li::before {
+            content: "\f00c";
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 0;
+            color: #25D366;
+        }
+
+        /* Görsel Galeri */
+        .image-gallery {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+            margin: auto;
+            height: 300px;
+        }
+
+        .image-gallery:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-gallery button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .image-gallery .prev {
+            left: 8px;
+        }
+
+        .image-gallery .next {
+            right: 8px;
+        }
+
+        /* Ürün Kartı */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+            max-height: 350px; /* Kartın yüksekliğini küçülttük */
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            margin: 10px;
+            width: 100%;
+            height: 160px; /* Resim yüksekliğini küçülttük */
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: auto;
+        }
+
+        .product-info {
+            padding: 10px; /* Bilgi alanı paddingini küçülttük */
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .product-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .product-description {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 5px 8px; /* Buton paddingini küçülttük */
+            background-color: #48664D;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #537759;
+        }
+
+        /* Mobilde kart düzenlemeleri */
+        @media (max-width: 768px) {
+            .product-card {
+                max-height: 300px; /* Kartın boyutunu tablette daha da küçülttük */
+            }
+
+            .product-title {
+                font-size: 0.9rem;
+            }
+
+            .product-description {
+                font-size: 0.7rem;
+            }
+
+            .product-info {
+                padding: 8px; /* Tablet için paddingi daha da küçülttük */
+            }
+
+            .product-image {
+                height: 140px; /* Resim boyutunu tablette küçülttük */
+            }
+
+            .btn {
+                padding: 4px 6px; /* Buton paddingini daha da küçülttük */
+            }
+        }
+
+        @media (max-width: 450px) {
+            .product-card {
+                max-height: 250px; /* Kartın boyutunu mobilde daha da küçülttük */
+            }
+
+            .product-title {
+                font-size: 0.8rem;
+            }
+
+            .product-description {
+                font-size: 0.65rem;
+            }
+
+            .product-info {
+                padding: 6px; /* Mobil için paddingi daha da küçülttük */
+            }
+
+            .product-image {
+                height: 120px; /* Resim boyutunu mobilde daha da küçülttük */
+            }
+
+            .btn {
+                padding: 3px 5px; /* Buton paddingini daha da küçülttük */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Geri Tuşu -->
+    <a href="products.html" class="back-button">&#8678; Geri</a>
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+    
+            <!-- Menü Butonu (Mobilde görünecek) -->
+            <div class="mobile-nav" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Menü -->
+            <nav class="nav-menu">
+                <a href="index.html">Anasayfa</a>
+                <a href="about.html">Hakkımızda</a>
+                <a href="products.html">Ürünlerimiz</a>
+                <a href="contact.html">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ürün Detay Bölümü -->
+    <div class="container product-container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-gallery">
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <img src="" alt="" class="img-fluid" id="product-image">
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 id="product-name"></h3>
+                <p id="product-description"></p>
+                <ul id="product-features">
+                    <!-- Özellikler buraya eklenecek -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+<footer id="footer" class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 Bilgen Paslanmaz. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Ürünler dizisi
+        const products = [
+            {
+                id: 1,
+                name: "100 litre Zeytinyağı Tankı",
+                description: "304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.",
+                image: ["img/bilgen.png", "img/100ltyan.png", "img/100ltyan2.png", "img/musluk.png"],
+                features: ["100 litre kapasite", "Paslanmaz çelik", "304 krom vana", "45 cm çap", "65 cm uzunluk", "sehpa uzunluğu 40 cm"]
+            },
+            {
+                id: 2,
+                name: "200 litre Zeytinyağı Tankı",
+                description: "304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.",
+                image: ["img/200lt.png", "img/200lt3.png", "img/200lt4.png", "img/musluk.png"],
+                features: ["200 litre kapasite", "Paslanmaz çelik", "304 krom vana" , "65 cm çap", "65 cm uzunluk", "sehpa uzunluğu 40 cm"]
+            },
+
+
+            {
+                id: 3,
+                name: "300 litre Zeytinyağı Tankı",
+                description: "304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.",
+                image: ["img/300lt.png", "img/300ltalt1.png", "img/300lt3.png","img/300lt4.png", "img/musluk.png"],
+                features: ["300 litre kapasite", "Paslanmaz çelik", " 304 krom vana" , "65 cm çap", "100 cm uzunluk", "sehpa uzunluğu 40 cm"]
+            },
+
+            {
+                id: 4,
+                name: "460 litre Zeytinyağı Tankı",
+                description: "304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.",
+                image: ["img/460lt1.png","img/460lt2.png","img/460ltalt.png","img/musluk.png" ],
+                features: ["300 litre kapasite", "Paslanmaz çelik", " 304 krom vana" , "65 cm çap", "150 cm uzunluk", "sehpa uzunluğu 40 cm"]
+            },
+
+            {
+                id: 5,
+                name: "1 ton Zeytinyağı Tankı",
+                description: "304 Kalite Paslanmaz Zeytinyağı Tankı yüksek kaliteli malzemeler ile üretilmiştir.",
+                image: ["img/ton.png" ],
+                features: ["1 ton kapasite", "Paslanmaz çelik", " 304 krom vana" ]
+            },
+            // Diğer ürünler...
+        ];
+
+        // URL'den ID parametresini al
+        const params = new URLSearchParams(window.location.search);
+        const productId = parseInt(params.get('id'));
+
+        // Ürünü bul ve bilgileri sayfaya yerleştir
+        const product = products.find(p => p.id === productId);
+        if (product) {
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-description').textContent = product.description;
+
+            const productImage = document.getElementById('product-image');
+            productImage.src = product.image[0];
+            productImage.alt = product.name;
+
+            const productFeatures = document.getElementById('product-features');
+            product.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.textContent = feature;
+                productFeatures.appendChild(li);
+            });
+
+            // Görsel galeri için değişkenler
+            let currentImageIndex = 0;
+
+            // Görsel değiştirme fonksiyonu
+            window.changeImage = function(direction) {
+                currentImageIndex += direction;
+                if (currentImageIndex < 0) currentImageIndex = product.image.length - 1;
+                if (currentImageIndex >= product.image.length) currentImageIndex = 0;
+                productImage.src = product.image[currentImageIndex];
+            };
+        } else {
+            document.querySelector('.product-container').innerHTML = '<p>Ürün bulunamadı.</p>';
+        }
+    </script>
+</body>
+</html>
