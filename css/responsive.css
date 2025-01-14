@@ -485,7 +485,7 @@ Version:	1.1
 		
 			/* Slider opacity ayarını mobilde biraz daha düşük yapıyoruz */
 			.slider .single-slider:before {
-				opacity: 0.5; /* Opasiteyi artırarak daha net içerik görünüyor */
+				opacity: 0.3; /* Opasiteyi artırarak daha net içerik görünüyor */
 			}
 
 			.slicknav_menu {
